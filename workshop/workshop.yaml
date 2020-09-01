@@ -3,6 +3,10 @@ name: Markdown Sample
 modules:
     activate:
     - workshop-overview
-    - setup-environment
-    - exercises/01-sample-content
+    - exercises/01-create-project
+    - exercises/02-add-application
+    - exercises/03-application-sync-status
+    - exercises/04-deploy-application
+    - exercises/05-continuous-monitoring
+    - exercises/06-verify-deployment
     - workshop-summary

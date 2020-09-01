@@ -1,12 +1,28 @@
 modules:
+    concepts-overview:
+        name: Concepts Overview
+        exit_sign: Workshop Overview
     workshop-overview:
         name: Workshop Overview
-        exit_sign: Setup Environment
-    setup-environment:
-        name: Setup Environment
-        exit_sign: Start Workshop
-    exercises/01-sample-content:
-        name: Sample Content
+        exit_sign: Create a Project
+    exercises/01-create-project:
+        name: Create a Project
+        exit_sign: Add an Application
+    exercises/02-add-application:
+        name: Add an Application
+        exit_sign: Application Sync Status
+    exercises/03-application-sync-status:
+        name: Application Sync Status
+        exit_sign: Deploy an Application
+    exercises/04-deploy-application:
+        name: Deploy an Application
+        exit_sign: Continuous Monitoring
+    exercises/05-continuous-monitoring:
+        name: Continuous Monitoring
+        exit_sign: Verify Deployment
+    exercises/06-verify-deployment:
+        name: Verify Deployment
+        exit_sign: Workshop Summary
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

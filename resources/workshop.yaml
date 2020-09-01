@@ -1,18 +1,22 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: lab-argocd-fundamentals
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
+  title: Argo CD Fundamentals
+  description: A workshop on learning the fundamentals of Argo CD
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  url: https://github.com/danielhelfand/lab-argocd-fundamentals
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    image: danielhelfand/lab-argocd-fundamentals:latest
   session:
+    env:
+    - name: ARGOCD_SERVER_PASSWORD
+      value: REPLACE_PASSWORD
+    - name: ARGOCD_SERVER_ENDPOINT
+      value: REPLACE_ENDPOINT
     namespaces:
       budget: small
     applications:
@@ -20,6 +24,6 @@ spec:
         enabled: true
         layout: split
       console:
-        enabled: true
+        enabled: false
       editor:
-        enabled: true
+        enabled: false
